@@ -1,0 +1,10 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+
+    &__link {
+        line-height: 1.25;
+        color: $primary-text-color;
+    }
+
+}
