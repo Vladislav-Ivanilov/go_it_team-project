@@ -1,2 +1,15 @@
-@import './common';
-@import './example';
+@import "./utils/variables";
+@import './utils/general';
+@import './components/header';
+@import './components/heroe';
+@import './components/about_us';
+@import './components/program';
+@import './components/speakers';
+@import './components/price';
+@import './components/reviews';
+@import './components/registration';
+@import './components/contact';
+@import './components/footer';
+
+
+
