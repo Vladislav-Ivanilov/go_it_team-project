@@ -1,0 +1,57 @@
+.price {
+    width: 100%;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        gap: 15px;
+    }
+
+    @media screen and (min-width: $desktop) {
+       gap: 30px;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 17px;
+        padding: 0;
+    }
+     
+    &__card {
+        width: 100%;
+        padding: 20px 0;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        
+        &:last-child {
+        margin-bottom: 0;
+        }
+
+        background-color: #FAFBFB;
+        border: 1px solid none;
+        box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
+        border-radius: 25px;
+
+        &:hover,
+        &:focus {
+            border: 1px solid $accent-color;
+        }
+
+        @media screen and (min-width: $mobile) {
+            width: 280px;       
+        }
+
+        @media screen and (min-width: $tablet) {
+            width: calc((100% - 30px) / 3);
+            margin-bottom: 0;  
+        } 
+    }
+       
+    &__item {
+    margin-left: 10px;
+    margin-bottom: 12px;
+
+    &:last-child {
+        margin-bottom: 0;
+     }
+    }
+ }
