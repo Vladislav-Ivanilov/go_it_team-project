@@ -59,6 +59,8 @@ body {
 	font-weight: 500;
 	font-size: 32px;
 	line-height: 1.2;
+	text-align: center;
+	margin: 0 0 28px 0;
 }
 
 .text {
@@ -69,7 +71,7 @@ body {
 .button {
 	width: fit-content;
 	padding: 8px 0;
-	
+
 	border: none;
 	border-radius: 25px;
 	cursor: pointer;
