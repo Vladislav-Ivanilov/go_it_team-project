@@ -34,8 +34,10 @@
 		border-radius: 50%;
 	}
 	&__foto-secondary {
-		max-width: 290px;
-		max-height: 290px;
+		@media screen and (min-width: $tablet) {
+			max-width: 290px;
+			max-height: 290px;
+		}
 	}
 
 	&__img {
