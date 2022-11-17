@@ -4,6 +4,9 @@ body {
 	font-weight: 400;
 	color: $primary-text-color;
 	background: url(../images/fone.png) repeat center/cover #fbfbfb;
+	&.is-hidden {
+		overflow: hidden;
+	}
 }
 
 .list {
@@ -69,16 +72,29 @@ body {
 }
 
 .button {
+	display: flex;
+	justify-content: center;
 	width: 145px;
 	padding: 8px 0;
-
-	border: none;
 	border-radius: 25px;
+	border: transparent;
 	cursor: pointer;
 
+	box-shadow: 10px 15px 25px rgba(232, 183, 183, 0.45);
 	background-color: $accent-color;
 
 	font-size: 18px;
 	line-height: 1.22;
 	color: $primary-white;
+	&:hover,
+	:focus {
+		color: $accent-color;
+		background: #ffffff;
+		border: 1px solid $accent-color;
+	}
+	&:active {
+		color: $primary-white;
+		background: $accent-color;
+		border: 1px solid $primary-white;
+	}
 }

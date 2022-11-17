@@ -1,125 +1,73 @@
 .about-us {
-  padding: 20px;
-  text-align: center;
+	padding-top: 20px;
+	padding-bottom: 30px;
 
-  // .about-us__block
-  @media screen and (max-width: 767px) {
-    &__block {
-      display: inline-block;
-    }
-  }
+	&__block {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+		width: 100%;
 
-  // .about-us__picture
+		@media screen and (min-width: 767px) {
+			flex-direction: row;
+			align-items: stretch;
+		}
+	}
 
-  //   &__picture {
-  //   }
+	&__img {
+		display: inline-block;
+	}
 
-  // .about-us__image
+	&__information {
+		@media screen and (min-width: 768px) {
+		}
+	}
 
-  //   &__image {
-  //   }
+	&__title {
+		margin: 0;
+		margin-bottom: 8px;
+		text-align: center;
 
-  // .about-us__img
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 1.21;
+		color: $title-text-color;
 
-  &__img {
-    margin-bottom: 28px;
-    border-radius: 24px;
-  }
+		@media screen and (min-width: 768px) {
+			margin-bottom: 28px;
+			text-align: left;
+			font-size: 32px;
+		}
+	}
 
-  // .about-us__information
+	&__text {
+		margin: 0;
 
-  &__information {
-    // display: inline-block;
-    max-width: 480px;
-  }
+		line-height: 1.25;
+		color: $title-text-color;
 
-  // .about-us__title
+		&--hidden {
+			display: none;
+		}
+	}
 
-  &__title {
-    margin: 0;
-    margin-bottom: 8px;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.21;
-    color: $title-text-color;
-  }
+	&__link {
+		display: flex;
 
-  // .about-us__text
+		margin-top: 30px;
+		font-weight: 500;
+		line-height: 1.25;
+		color: $title-text-color;
 
-  &__text {
-    margin: 0;
-    margin-bottom: 16px;
-    max-width: 300px;
-    text-align: left;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    color: $title-text-color;
-
-    &--hidden {
-      display: none;
-    }
-  }
-
-  // .about-us__link
-
-  &__link {
-    display: flex;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.25;
-    color: $title-text-color;
-  }
+		@media screen and (min-width: 1200px) {
+			display: none;
+		}
+	}
 }
-
-@media screen and (min-width: 768px) {
-  .about-us__block {
-    display: inline-flex;
-  }
-  .about-us__img {
-    min-width: 336px;
-    margin: 0;
-  }
-  .about-us__title {
-    width: 150px;
-    margin-left: 31px;
-    margin-bottom: 28px;
-    font-size: 32px;
-    line-height: 1.22;
-  }
-  .about-us__text {
-    margin-left: 32px;
-    max-width: 300px;
-  }
-  .about-us__link {
-    margin-left: 32px;
-  }
-  .about-us__information {
-    margin: 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .about-us {
-    text-align: left;
-  }
-  .about-us__block {
-    align-items: center;
-  }
-  .about-us__img {
-    min-width: 608px;
-  }
-  .about-us__link {
-    display: none;
-  }
-  .about-us__text {
-    font-size: 18px;
-    line-height: 1.22;
-  }
-  .about-us__text--hidden {
-    display: block;
-  }
-  .about-us__text {
-    max-width: 100%;
-  }
+.indent {
+	margin-top: 30px;
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 30px;
+	}
 }
