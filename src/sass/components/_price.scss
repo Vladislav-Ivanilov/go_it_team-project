@@ -50,8 +50,50 @@
     margin-left: 10px;
     margin-bottom: 12px;
 
+    &::before {
+        content: "";
+        display: inline-flex;
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+        background-image: url('/src/images/coоk.png');
+        background-size: contain;
+
+        @media screen and (min-width: $desktop) {
+            margin-right: 16px;
+        }
+        
+    }    
+    
     &:last-child {
         margin-bottom: 0;
      }
     }
- }
+
+    &__list {
+        position: relative;
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translateX(-30%);
+    &:first-child {
+        display: none;
+    }
+
+        @media screen and (min-width: $tablet) {
+            transform: translateX(-5%);
+        }
+
+        @media screen and (min-width: $desktop) {
+            transform: translateX(-50%);
+        }
+        
+       
+    }
+
+}
+    
+ 
