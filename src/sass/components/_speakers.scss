@@ -1,82 +1,76 @@
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
 .speakers__title {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.21;
-  text-align: center;
-  color: #3C322D;
-  margin-bottom:24px;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1.21;
+	text-align: center;
+	color: #3c322d;
+	margin-bottom: 24px;
 
-  @media screen and (min-width: $tablet) {
-    font-size: 32px;
-    margin-bottom:27px;
-  }
+	@media screen and (min-width: $tablet) {
+		font-size: 32px;
+		margin-bottom: 27px;
+	}
 }
 .speakers__list {
-  display:flex;
-  gap:20px;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
 
-  @media screen and (min-width: $tablet) {
-    gap:32px;
-  }
+	@media screen and (min-width: $tablet) {
+		gap: 32px;
+	}
 }
 .speakers__item {
-  flex-basis:calc((100% - 20px)/2);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	flex-basis: calc((100% - 20px) / 2);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
-  @media screen and (min-width: $tablet) {
-    flex-basis:calc((100% - 96px)/4);
-  }
+	@media screen and (min-width: $tablet) {
+		flex-basis: calc((100% - 96px) / 4);
+	}
 }
-
 
 .speakers__round {
-  position: relative;
-  background-color: #f3848c4a;
-  border-radius: 50%;
-  max-height: 100%;
-  max-width: 100%;
-  width: 100%;
-  aspect-ratio: 1 / 1;
+	position: relative;
+	background-color: #f3848c4a;
+	border-radius: 50%;
+	max-height: 100%;
+	max-width: 100%;
+	width: 100%;
+	aspect-ratio: 1 / 1;
 }
 .speakers__item-title {
-  margin-top:12px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.22;
-  text-align: center;
+	margin-top: 12px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.22;
+	text-align: center;
 
-  @media screen and (min-width: $tablet) {
-    margin-top:20px;
-    font-size: 18px;
-  }
+	@media screen and (min-width: $tablet) {
+		margin-top: 20px;
+		font-size: 18px;
+	}
 }
 .speakers__item-text {
-  margin-top:12px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.21;
-  text-align: center;
+	margin-top: 12px;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 1.21;
+	text-align: center;
 
-  @media screen and (min-width: $tablet) {
-    margin-top:20px;
-    font-size: 14px;
-  }
+	@media screen and (min-width: $tablet) {
+		margin-top: 20px;
+		font-size: 14px;
+	}
 
-  @media screen and (min-width: $desktop) {
-    font-size: 16px;
-  }
+	@media screen and (min-width: $desktop) {
+		font-size: 16px;
+	}
 }
 .speakers__image {
-  position: absolute;
-  bottom: 0;
+	position: absolute;
+	bottom: 0;
 }
