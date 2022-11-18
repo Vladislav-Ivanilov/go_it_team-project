@@ -26,12 +26,12 @@
 				position: absolute;
 				left: 55%;
 				transform: rotate(90deg);
-				bottom: 25px;
+				bottom: 20px;
 			}
 
 			@media screen and (min-width: $desktop) {
 				width: 166px;
-				bottom: 30px;
+				bottom: 25px;
 				left: 58%;
 			}
 		}
@@ -55,11 +55,6 @@
 			left: -368px;
 			padding-top: 99px;
 		}
-	}
-
-	@media screen and (min-width: $desktop) {
-		padding-left: 123px;
-		padding-right: 123px;
 	}
 
 	&__box {
@@ -89,11 +84,11 @@
 			max-width: 280px;
 			height: 394px;
 			background: linear-gradient(rgba(61, 44, 44, 0.6), rgba(61, 44, 44, 0.6)),
-				url(../images/mobile/donuts-registration-320.jpg) no-repeat center/cover, #3d2c2c;
+				url(../images/registration/mobile/donuts-registration-320.jpg) no-repeat center/cover, #3d2c2c;
 
 			@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
 				background: linear-gradient(rgba(61, 44, 44, 0.6), rgba(61, 44, 44, 0.6)),
-					url(../images/mobile/donuts-registration-320@2x.jpg) no-repeat center/cover, #3d2c2c;
+					url(../images/registration/mobile/donuts-registration-320@2x.jpg) no-repeat center/cover, #3d2c2c;
 			}
 		}
 
@@ -105,20 +100,20 @@
 			top: 0;
 			right: 0;
 			background: linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
-				url(../images/tablet/donuts-registration-768.png) no-repeat right/cover, #3d2c2c;
+				url(../images/registration/tablet/donuts-registration-768.png) no-repeat right/cover, #3d2c2c;
 
 			@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
 				background: linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
-					url(../images/tablet/donuts-registration-768@2x.png) no-repeat right/cover, #3d2c2c, z-index 1;
+					url(../images/registration/tablet/donuts-registration-768@2x.png) no-repeat right/cover, #3d2c2c, z-index 1;
 			}
 		}
 
 		@media screen and (min-width: $desktop) {
 			background: linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
-				url(../images/desktop/donuts-registration-1280.png) no-repeat right/cover, #3d2c2c;
+				url(../images/registration/desktop/donuts-registration-1280.png) no-repeat right/cover, #3d2c2c;
 			@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
 				background: linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
-					url(../images/desktop/donuts-registration-1280@2x.png) no-repeat right/cover, #3d2c2c;
+					url(../images/registration/desktop/donuts-registration-1280@2x.png) no-repeat right/cover, #3d2c2c;
 			}
 		}
 	}
@@ -188,6 +183,15 @@
 			text-align: left;
 			color: #000000;
 			margin-top: 40px;
+			margin-bottom: 16px;
+			font-size: 16px;
+			line-height: 1.25;
+		}
+
+		@media screen and (min-width: $desktop) {
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 1.2;
 			margin-bottom: 24px;
 		}
 	}
@@ -201,11 +205,11 @@
 			position: absolute;
 			margin: 0;
 			top: 103px;
-			right: -157px;
+			right: -220px;
 		}
 
 		@media screen and (min-width: $desktop) {
-			right: -132px;
+			right: -160px;
 		}
 	}
 	&__input {
