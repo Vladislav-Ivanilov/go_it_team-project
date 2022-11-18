@@ -1,5 +1,4 @@
 .registration {
-    background: #BDBDBD;
     &__tittle {
         text-align: center;
         margin: 0;
@@ -54,6 +53,7 @@
 
     @media screen and (min-width: $desktop) {
         max-width: 1034px;
+        filter: drop-shadow(10px 15px 25px rgba(210, 201, 201, 0.45));
     }
 }
 
