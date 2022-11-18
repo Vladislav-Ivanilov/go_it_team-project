@@ -1,0 +1,257 @@
+.registration {
+    &__tittle {
+        text-align: center;
+        margin: 0;
+        margin-bottom: 27px;
+    }
+
+    &__text {
+        text-align: center;
+        display: inline-block;
+        color: #f6f7f7;
+        border-bottom: 1px solid #f6f7f7;
+        margin: 0 auto;
+        padding: 40px 0 20px 0;
+        width: 100%;
+        max-width: 264px;
+
+        @media screen and (min-width: $tablet) {
+            position: absolute;
+            color: #000000;
+            z-index: 2;
+            max-width: 90px;
+            left: -190px;
+            padding: 85px 0 8px 0;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.22;
+            text-align: right;          
+        }
+
+        @media screen and (min-width: $desktop) {
+            max-width: 127px;
+            font-size: 20px;
+            left: -368px;
+            padding-top: 99px;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding-left: 123px;
+        padding-right: 123px;
+    }
+}
+
+.registration__box {
+    @media screen and (min-width: $tablet) {
+        position: relative;
+        display: flex;
+        height: 100%;
+        max-width: 704px;
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: 1034px;
+        filter: drop-shadow(10px 15px 25px rgba(210, 201, 201, 0.45));
+    }
+}
+
+.registration__pictore {
+    @media screen and (max-width: $tablet) {
+        display: none;
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: block;
+        z-index: 2;
+    }
+}
+
+.registration__wrap {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 auto;
+    
+    @media screen and (max-width: $tablet) {
+        max-width: 280px;
+        height: 394px;
+        background: linear-gradient(rgba(61, 44, 44, 0.6),
+                    rgba(61, 44, 44, 0.6)),
+                url(../images/mobile/donuts-registration-320.jpg) no-repeat center/cover, #3D2C2C;
+        
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background: linear-gradient(rgba(61, 44, 44, 0.6), rgba(61, 44, 44, 0.6)),
+                    url(../images/mobile/donuts-registration-320@2x.jpg) no-repeat center/cover, #3D2C2C;
+            }
+    }
+
+    @media screen and (min-width: $tablet) {
+        position: absolute;
+        display: flex;
+        max-height: 246px;
+        max-width: 453px;
+        top: 0;
+        right: 0;
+        background: linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
+            url(../images/tablet/donuts-registration-768.png) no-repeat right/cover, #3D2C2C;
+        
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background: linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
+                url(../images/tablet/donuts-registration-768@2x.png) no-repeat right/cover, #3D2C2C,
+                z-index 1;
+            }
+    }
+
+    @media screen and (min-width: $desktop) {
+        background: linear-gradient(rgba(61, 44, 44, 0.3),
+                    rgba(61, 44, 44, 0.3)),
+                url(../images/desktop/donuts-registration-1280.png) no-repeat right/cover, #3D2C2C;
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background: linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
+                    url(../images/desktop/donuts-registration-1280@2x.png) no-repeat right/cover, #3D2C2C;
+            }
+    }
+}
+
+.registration__inner {
+    @media screen and (max-width: $tablet) {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    @media screen and (min-width: $tablet) {
+        z-index: 2;
+    }
+}
+
+.registration__text::before {
+    @media screen and (max-width: $tablet) {
+        display: none;
+    }
+
+    @media screen and (min-width: $tablet) {
+        content: " ";
+        width: 154px;
+        height: 1px;
+        background-color: $primary-text-color;
+        position: absolute;
+        left: 55%;
+        transform: rotate(90deg);
+        bottom: 25px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 166px;
+        bottom: 30px;
+        left: 58%;
+    }
+}
+
+.form {
+    @media screen and (max-width: $tablet){
+        padding: 0 8px;
+        z-index: 2;
+    }
+
+    @media screen and (min-width: $tablet) {
+        position: absolute;
+        left: -43px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        left: -185;
+    }
+
+    &__text {
+        margin: 0;
+        margin-top: 20px;
+        text-align: center;
+        color: $primary-white;
+
+        @media screen and (min-width: $tablet) {
+            text-align: left;
+            color: #000000;
+            margin-top: 40px;
+            margin-bottom: 24px;
+        }
+    }
+
+    &__btn {
+        display: block;
+        margin: auto;
+        margin-top: 32px;
+
+        @media screen and (min-width: $tablet){
+            position: absolute;
+            margin: 0;
+            top: 103px;
+            right: -157px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            right: -132px;
+        }
+    }
+}
+
+.form__input {
+    width: 100%;
+    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $primary-white;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $primary-white;
+
+    @media screen and (min-width: $tablet) {
+        color: #000000;
+        border-bottom: 1px solid #000000;
+        margin-top: 16px;
+        width: 237px;
+        display: flex;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 212px;
+    }
+}
+
+.form__input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: $primary-white;
+
+    @media screen and (min-width: $tablet) {
+        color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.registration__img {
+    @media screen and (max-width: $tablet) {
+        display: none;
+    }
+
+    @media screen and (min-width: $tablet) {
+        bottom: 20px;
+        position: absolute;
+        left: 23px;
+        z-index: 3;
+    }
+
+    @media screen and (min-width: $desktop) {
+        bottom: 16px;
+        left: 15px;
+    }
+}
