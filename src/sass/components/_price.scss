@@ -1,22 +1,32 @@
 .price {
 	width: 100%;
 
-	@media screen and (min-width: $tablet) {
-		display: flex;
-		gap: 15px;
-	}
+	&__main {
+		display: block;
 
-	@media screen and (min-width: $desktop) {
-		gap: 30px;
+		@media screen and (min-width: $tablet) {
+			display: flex;
+			gap: 15px;
+		}
+
+		@media screen and (min-width: $desktop) {
+			gap: 30px;
+		}
 	}
 
 	&__title {
 		text-align: center;
 		margin-bottom: 17px;
 		padding: 0;
+		font-weight: 600;
+        font-size: 18px;
+        line-height: 1.22px;
 	}
 
 	&__card {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 		width: 100%;
 		padding: 20px 0;
 		margin: 0 auto;
@@ -24,6 +34,14 @@
 
 		&:last-child {
 			margin-bottom: 0;
+
+			@media screen and (min-width: $tablet) {
+				min-height: 580px;
+			}
+
+			@media screen and (min-width: $desktop) {
+				max-height: 610px;
+			}
 		}
 
 		background-color: #fafbfb;
@@ -74,24 +92,55 @@
 	&__list {
 		position: relative;
 	}
-
+	
 	&__img {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		transform: translateX(-30%);
-		&:first-child {
+		@media screen and (max-width: $tablet) {
 			display: none;
 		}
+		position: absolute;
+		transform: translate(0%, 100%);
 
+		
 		@media screen and (min-width: $tablet) {
-			transform: translateX(-5%);
+			transform: translate(10%, 100%);
 		}
 
 		@media screen and (min-width: $desktop) {
-			transform: translateX(-50%);
+			width: 300px;
+			height: 218px;
+			transform: translate(30%, 0);
 		}
 	}
+
+	&__img-2 {
+		position: absolute;
+		transform: translate(30%, -100%);
+		
+		@media screen and (min-width: $tablet) {
+			transform: translate(10%, 10%);
+		}
+
+		@media screen and (min-width: $desktop) {
+			width: 300px;
+			height: 218px;
+			transform: translate(30%, -40%);
+		}
+	}
+	&__img-3 {
+		position: absolute;
+		transform: translate(30%, -110%);
+		
+		@media screen and (min-width: $tablet) {
+			transform: translate(10%, -100%);
+		}
+
+		@media screen and (min-width: $desktop) {
+			width: 300px;
+			height: 218px;
+			transform: translate(30%, -90%);
+		}
+	}
+
 	&__button {
 		margin: 0 auto;
 	}
