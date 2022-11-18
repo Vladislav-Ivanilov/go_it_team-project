@@ -84,6 +84,7 @@
   // .program__item
 
   &__item {
+    display: flex;
     margin-bottom: 10px;
 
     &:last-child {
@@ -106,6 +107,43 @@
       &:last-child {
         margin-bottom: 21px;
       }
+    }
+    &::before {
+      content: '';
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+      background-image: url('/src/images/coоk.png');
+
+      background-size: contain;
+
+      @media screen and (min-width: $desktop) {
+        margin-right: 16px;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: '';
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+      background-image: url('/src/images/coоk.png');
+
+      background-size: contain;
+
+      @media screen and (min-width: $desktop) {
+        margin-right: 16px;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 
@@ -175,47 +213,47 @@
     height: 180px;
 
     @media screen and (min-width: 768px) {
-      width: 210px;
-      height: 210px;
+      width: 215px;
+      height: 215px;
     }
 
     @media screen and (min-width: 1200px) {
-      width: 290px;
-      height: 290px;
+      width: 295px;
+      height: 295px;
     }
   }
 
   &__wrap {
     position: absolute;
-    top: 82px;
-    left: 26px;
+    top: 81px;
+    left: 19px;
     text-align: center;
 
     @media screen and (min-width: 768px) {
-      top: 100px;
-      left: 36px;
+      top: 101px;
+      left: 25px;
     }
 
     @media screen and (min-width: 1200px) {
-      top: 170px;
-      left: 45px;
+      top: 171px;
+      left: 32px;
     }
   }
 
   &__wrap2 {
     position: absolute;
-    top: 94px;
-    left: 36px;
+    top: 83px;
+    left: 30px;
     text-align: center;
 
     @media screen and (min-width: 768px) {
       top: 105px;
-      left: 40px;
+      left: 32px;
     }
 
     @media screen and (min-width: 1200px) {
       top: 178px;
-      left: 56px;
+      left: 45px;
     }
   }
 
