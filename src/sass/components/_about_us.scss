@@ -15,8 +15,8 @@
 		}
 	}
 
-	&__img {
-		display: inline-block;
+	&__picture {
+		flex-shrink: 0;
 	}
 
 	&__information {

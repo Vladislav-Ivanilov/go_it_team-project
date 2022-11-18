@@ -49,14 +49,16 @@
 	&__item {
 		margin-left: 10px;
 		margin-bottom: 12px;
+		display: flex;
 
 		&::before {
 			content: "";
-			display: inline-flex;
+			flex-shrink: 0;
 			width: 24px;
 			height: 24px;
 			margin-right: 10px;
 			background-image: url("/src/images/coоk.png");
+
 			background-size: contain;
 
 			@media screen and (min-width: $desktop) {
