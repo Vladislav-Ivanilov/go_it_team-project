@@ -126,6 +126,7 @@
 			transform: translate(30%, -40%);
 		}
 	}
+
 	&__img-3 {
 		position: absolute;
 		transform: translate(30%, -110%);
@@ -139,6 +140,9 @@
 			height: 218px;
 			transform: translate(30%, -90%);
 		}
+	}
+	&__images {
+		display: block;
 	}
 
 	&__button {
