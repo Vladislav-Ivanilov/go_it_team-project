@@ -1,0 +1,277 @@
+.program {
+  width: 320px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    display: flex;
+  }
+  &__block {
+    @media screen and (min-width: 1200px) {
+      width: 417px;
+      margin-right: 117px;
+    }
+  }
+
+  // .program__flex
+  &__flex {
+    display: flex;
+  }
+
+  // .program__title
+
+  &__title {
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.21;
+    text-align: center;
+    color: $title-text-color;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 28px;
+      font-size: 32px;
+      line-height: 1.22;
+      text-align: left;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 24px;
+      font-size: 32px;
+      line-height: 1.22;
+    }
+  }
+
+  // .program__text
+
+  &__text {
+    margin: 0;
+    margin-bottom: 16px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $title-text-color;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 21px;
+      font-size: 18px;
+      line-height: 1.22;
+    }
+  }
+
+  // .program__list
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 16px;
+    list-style: none;
+  }
+
+  // .program__item
+
+  &__item {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 16px;
+
+      &:last-child {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 18px;
+      font-size: 18px;
+      line-height: 1.22;
+
+      &:last-child {
+        margin-bottom: 21px;
+      }
+    }
+  }
+
+  // .program__link
+
+  &__link {
+    display: flex;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $title-text-color;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+  }
+
+  &__overlay {
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+      margin: 0;
+      text-align: left;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.22;
+      color: $title-text-color;
+    }
+  }
+
+  // .program__meta
+
+  &__meta {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    margin-right: -25px;
+    list-style: none;
+  }
+
+  //  .program__inner
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    margin-top: 25px;
+    list-style: none;
+  }
+  // .program__items
+
+  &__items {
+    position: relative;
+  }
+
+  &__wrapper {
+    width: 180px;
+    height: 180px;
+
+    @media screen and (min-width: 768px) {
+      width: 210px;
+      height: 210px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 290px;
+      height: 290px;
+    }
+  }
+
+  &__wrap {
+    position: absolute;
+    top: 82px;
+    left: 26px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      top: 100px;
+      left: 36px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      top: 170px;
+      left: 45px;
+    }
+  }
+
+  &__wrap2 {
+    position: absolute;
+    top: 94px;
+    left: 36px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      top: 105px;
+      left: 40px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      top: 178px;
+      left: 56px;
+    }
+  }
+
+  // .program__picture
+
+  //   &__picture {
+  //   }
+
+  // .program__img
+
+  &__img {
+    display: block;
+    width: 100%;
+  }
+
+  // .program__desc
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+    color: #ffffff;
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 16px;
+      font-size: 24px;
+      line-height: 1.21;
+    }
+  }
+
+  // .program__slogan
+
+  &__slogan {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    color: #ffffff;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.21;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+}
