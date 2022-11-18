@@ -1,32 +1,37 @@
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	padding: 17px 0;
 
-    &__link {
-        line-height: 1.25;
-        color: $primary-text-color;
-    }
+	@media screen and (min-width: $tablet) {
+		padding: 100px 0;
+	}
 
-    &__svg {
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 
-        @media screen and (min-width: $tablet) {
-            display: none;
-            }
-    }
+	&__link {
+		line-height: 1.25;
+		color: $primary-text-color;
+	}
 
-&__image {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
+	&__svg {
+		@media screen and (min-width: $tablet) {
+			display: none;
+		}
+	}
 
-&__img {
-    
+	&__image {
+		display: flex;
+		width: 100%;
 
-    @media screen and (min-width: $tablet) {
-        display: none;
-        }
-}
+		justify-content: center;
+	}
 
+	&__img {
+		@media screen and (min-width: $tablet) {
+			display: none;
+		}
+	}
 }
