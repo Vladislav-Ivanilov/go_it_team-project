@@ -1,142 +1,148 @@
 <div class="wrapper">
-  <header class="header">
-    <picture class="header__picture">
-      <source
-        class="header__logo"
-        srcset="./images/logo-1200.png 1x, ./images/logo-1200@2x.png 2x"
-        type="image/png"
-        media="(min-width: 1200px)"
-      />
-      <source
-        class="header__logo"
-        srcset="./images/logo-768.png 1x, ./images/logo-768@2x.png 2x"
-        type="image/png"
-        media="(min-width: 768px)"
-      />
-      <source
-        class="header__logo"
-        srcset="./images/logo-480.png 1x, ./images/logo-480@2x.png 2x"
-        type="image/png"
-        media="(max-width: 767px)"
-      />
-      <img
-        class="header__logo"
-        src="./images/logo-480.png"
-        alt="logo"
-        width="108"
-      />
-    </picture>
+  <div class="container">
+    <header class="header">
+      <div class="header__picture">
+        <picture>
+          <source
+            class="header__logo"
+            srcset="./images/logo-1200.png 1x, ./images/logo-1200@2x.png 2x"
+            type="image/png"
+            media="(min-width: 1200px)"
+          />
+          <source
+            class="header__logo"
+            srcset="./images/logo-768.png 1x, ./images/logo-768@2x.png 2x"
+            type="image/png"
+            media="(min-width: 768px)"
+          />
+          <source
+            class="header__logo"
+            srcset="./images/logo-480.png 1x, ./images/logo-480@2x.png 2x"
+            type="image/png"
+            media="(max-width: 767px)"
+          />
+          <img
+            class="header__logo"
+            src="./images/logo-480.png"
+            alt="logo"
+            width="108"
+          />
+        </picture>
+      </div>
 
-    <button
-      class="menu-button"
-      type="button"
-      aria-expanded="false"
-      aria-controls="menu-container"
-      data-menu-button=""
-    >
-      <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-        <use
-          class="icon-menu"
-          href="./images/icon.svg#menu"
-          width="30"
-          height="16"
-        ></use>
-        <use
-          class="icon-close"
-          href="./images/icon.svg#cros"
-          width="32"
-          height="32"
-        ></use>
-      </svg>
-    </button>
-
-    <div class="menu-container" id="menu-container" data-menu="">
-      <ul class="menu-container__list">
-        <li class="menu-container__item">
-          <a href="#" class="menu-container__link">About us</a>
-        </li>
-        <li class="menu-container__item">
-          <a class="menu-container__link" href="#">Program</a>
-        </li>
-        <li class="menu-container__item">
-          <a class="menu-container__link" href="#">Speaker</a>
-        </li>
-        <li class="menu-container__item">
-          <a class="menu-container__link" href="#">Price</a>
-        </li>
-        <li class="menu-container__item">
-          <a class="menu-container__link" href="#">Reviws</a>
-        </li>
-        <li class="menu-container__item">
-          <a class="menu-container__link" href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
-
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link main-nav__link--first">About us</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Program</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Speakers</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Price</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Reviews</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--last" href="#">Contacts</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <section class="section-heroe">
-    <div class="section-heroe__container">
-      <h1 class="section-heroe__title">
-        Donut Masterclass with the Donut King
-      </h1>
-      <h2 class="section-heroe__text">Hosted by Eva Green</h2>
-      <a data-modal-open class="section-heroe__link button list" href="#"
-        >Register</a
+      <button
+        class="menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu-container"
+        data-menu-button=""
       >
-    </div>
+        <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+          <use
+            class="icon-menu"
+            href="./images/icon.svg#menu"
+            width="30"
+            height="16"
+          ></use>
+          <use
+            class="icon-close"
+            href="./images/icon.svg#cros"
+            width="32"
+            height="32"
+          ></use>
+        </svg>
+      </button>
 
-    <ul class="social list">
-      <li class="social__list">
-        <a class="social-links" href="https://twitter.com/" target="_blank">
-          <svg class="social__icon" width="20" height="20">
-            <use href="./images/icon.svg#twitter"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social__list">
-        <a
-          class="social-links"
-          href="https://www.instagram.com/"
-          target="_blank"
+      <div class="menu-container" id="menu-container" data-menu="">
+        <ul class="menu-container__list">
+          <li class="menu-container__item">
+            <a href="#" class="menu-container__link">About us</a>
+          </li>
+          <li class="menu-container__item">
+            <a class="menu-container__link" href="#">Program</a>
+          </li>
+          <li class="menu-container__item">
+            <a class="menu-container__link" href="#">Speaker</a>
+          </li>
+          <li class="menu-container__item">
+            <a class="menu-container__link" href="#">Price</a>
+          </li>
+          <li class="menu-container__item">
+            <a class="menu-container__link" href="#">Reviws</a>
+          </li>
+          <li class="menu-container__item">
+            <a class="menu-container__link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link main-nav__link--first"
+              >About us</a
+            >
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Program</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Speakers</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Price</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Reviews</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--last" href="#">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="section-heroe">
+      <div class="section-heroe__container">
+        <h1 class="section-heroe__title">
+          Donut Masterclass with the Donut King
+        </h1>
+        <h2 class="section-heroe__text">Hosted by Eva Green</h2>
+        <a data-modal-open class="section-heroe__link button list" href="#"
+          >Register</a
         >
-          <svg class="social__icon" width="20" height="20">
-            <use href="./images/icon.svg#instagram"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social__list">
-        <a
-          class="social-links"
-          href="https://www.facebook.com/"
-          target="_blank"
-        >
-          <svg class="social__icon" width="20" height="20">
-            <use href="./images/icon.svg#facebook"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-  </section>
+      </div>
+
+      <ul class="social list">
+        <li class="social__list">
+          <a class="social-links" href="https://twitter.com/" target="_blank">
+            <svg class="social__icon" width="20" height="20">
+              <use href="./images/icon.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__list">
+          <a
+            class="social-links"
+            href="https://www.instagram.com/"
+            target="_blank"
+          >
+            <svg class="social__icon" width="20" height="20">
+              <use href="./images/icon.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__list">
+          <a
+            class="social-links"
+            href="https://www.facebook.com/"
+            target="_blank"
+          >
+            <svg class="social__icon" width="20" height="20">
+              <use href="./images/icon.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
 </div>
