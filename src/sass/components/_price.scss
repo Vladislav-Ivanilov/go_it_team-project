@@ -19,8 +19,8 @@
 		margin-bottom: 17px;
 		padding: 0;
 		font-weight: 600;
-        font-size: 18px;
-        line-height: 1.22px;
+		font-size: 18px;
+		line-height: 1.22px;
 	}
 
 	&__card {
@@ -31,6 +31,7 @@
 		padding: 20px 0;
 		margin: 0 auto;
 		margin-bottom: 30px;
+		padding: 20px 20px 24px 8px;
 
 		&:last-child {
 			margin-bottom: 0;
@@ -74,6 +75,8 @@
 			flex-shrink: 0;
 			width: 24px;
 			height: 24px;
+			max-width: 100%;
+			max-height: 100%;
 			margin-right: 10px;
 			background-image: url("/src/images/coоk.png");
 
@@ -92,15 +95,15 @@
 	&__list {
 		position: relative;
 	}
-	
+
 	&__img {
 		@media screen and (max-width: $tablet) {
 			display: none;
 		}
+
 		position: absolute;
 		transform: translate(0%, 100%);
 
-		
 		@media screen and (min-width: $tablet) {
 			transform: translate(10%, 100%);
 		}
@@ -115,7 +118,7 @@
 	&__img-2 {
 		position: absolute;
 		transform: translate(30%, -100%);
-		
+
 		@media screen and (min-width: $tablet) {
 			transform: translate(10%, 10%);
 		}
@@ -130,7 +133,7 @@
 	&__img-3 {
 		position: absolute;
 		transform: translate(30%, -110%);
-		
+
 		@media screen and (min-width: $tablet) {
 			transform: translate(10%, -100%);
 		}
