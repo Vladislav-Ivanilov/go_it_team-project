@@ -25,28 +25,17 @@
 
 	&__card {
 		display: flex;
+		height: 100%;
 		flex-direction: column;
 		justify-content: space-between;
-		width: 100%;
-		padding: 20px 0;
-		margin: 0 auto;
+		padding: 20px;
 		margin-bottom: 30px;
-		padding: 20px 20px 24px 8px;
-
 		&:last-child {
 			margin-bottom: 0;
-
-			@media screen and (min-width: $tablet) {
-				min-height: 580px;
-			}
-
-			@media screen and (min-width: $desktop) {
-				max-height: 610px;
-			}
 		}
 
 		background-color: #fafbfb;
-		border: 1px solid none;
+		border: 1px solid transparent;
 		box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
 		border-radius: 25px;
 
@@ -55,36 +44,30 @@
 			border: 1px solid $accent-color;
 		}
 
-		@media screen and (min-width: $mobile) {
-			width: 280px;
-		}
-
 		@media screen and (min-width: $tablet) {
 			width: calc((100% - 30px) / 3);
+			height: 580px;
 			margin-bottom: 0;
+		}
+
+		@media screen and (min-width: $desktop) {
+			height: 610px;
 		}
 	}
 
 	&__item {
-		margin-left: 10px;
-		margin-bottom: 12px;
 		display: flex;
+		margin-bottom: 12px;
+		text-align: left;
 
 		&::before {
 			content: "";
 			flex-shrink: 0;
 			width: 24px;
 			height: 24px;
-			max-width: 100%;
-			max-height: 100%;
-			margin-right: 10px;
 			background-image: url("/src/images/coоk.png");
-
 			background-size: contain;
-
-			@media screen and (min-width: $desktop) {
-				margin-right: 16px;
-			}
+			margin-right: 20px;
 		}
 
 		&:last-child {
@@ -92,63 +75,34 @@
 		}
 	}
 
+	&__button {
+		margin-top: 35px;
+	}
+
 	&__list {
 		position: relative;
 	}
 
 	&__img {
+		position: absolute;
+		display: block;
+
 		@media screen and (max-width: $tablet) {
 			display: none;
-		}
-
-		position: absolute;
-		transform: translate(0%, 100%);
-
-		@media screen and (min-width: $tablet) {
-			transform: translate(10%, 100%);
-		}
-
-		@media screen and (min-width: $desktop) {
-			width: 300px;
-			height: 218px;
-			transform: translate(30%, 0);
 		}
 	}
 
 	&__img-2 {
 		position: absolute;
-		transform: translate(30%, -100%);
-
-		@media screen and (min-width: $tablet) {
-			transform: translate(10%, 10%);
-		}
-
-		@media screen and (min-width: $desktop) {
-			width: 300px;
-			height: 218px;
-			transform: translate(30%, -40%);
-		}
+		left: 20%;
+		bottom: 0;
 	}
 
 	&__img-3 {
 		position: absolute;
-		transform: translate(30%, -110%);
-
-		@media screen and (min-width: $tablet) {
-			transform: translate(10%, -100%);
-		}
-
-		@media screen and (min-width: $desktop) {
-			width: 300px;
-			height: 218px;
-			transform: translate(30%, -90%);
-		}
 	}
 	&__images {
 		display: block;
-	}
-
-	&__button {
-		margin: 0 auto;
+		width: 100%;
 	}
 }
