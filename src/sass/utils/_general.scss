@@ -4,6 +4,7 @@ body {
 	font-weight: 400;
 	color: $primary-text-color;
 	background: url(../images/fone.png) repeat center/cover #fbfbfb;
+	outline: $accent-color;
 	&.is-hidden {
 		overflow: hidden;
 	}
@@ -62,15 +63,17 @@ body {
 .text {
 	font-size: 18px;
 	line-height: 1.22;
+	text-align: center;
 }
 
 .button {
 	display: flex;
 	justify-content: center;
-	width: 145px;
-	padding: 8px 0;
+	width: fit-content;
+	padding: 8px 35px;
 	border-radius: 25px;
-	border: transparent;
+	margin: 0 auto;
+	border: 1px solid $accent-color;
 	cursor: pointer;
 
 	box-shadow: 10px 15px 25px rgba(232, 183, 183, 0.45);
@@ -80,15 +83,15 @@ body {
 	line-height: 1.22;
 	color: $primary-white;
 	&:hover,
-	:focus {
+	&:focus {
+		border: 1px solid $accent-color;
 		color: $accent-color;
 		background: #ffffff;
-		border: 1px solid $accent-color;
+		outline: transparent;
 	}
 	&:active {
 		color: $primary-white;
-		background: $accent-color;
-		border: 1px solid $primary-white;
+		border: 1px solid $accent-color;
 	}
 }
 
@@ -98,13 +101,13 @@ body {
 	margin-top: 30px;
 
 	@media screen and (min-width: 768px) {
-		width: 140px;
 		margin: 0;
-		margin-top: 30px;
 	}
 
 	&__list {
+		display: flex;
 		justify-content: center;
+		align-items: center;
 		margin-right: 20px;
 		&:last-child {
 			margin-right: 0;
@@ -114,5 +117,10 @@ body {
 	&__icon {
 		width: 100%;
 		fill: #3c322d;
+
+		&:hover,
+		&:focus {
+			fill: $accent-color;
+		}
 	}
 }
