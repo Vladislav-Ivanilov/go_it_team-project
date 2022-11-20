@@ -17,13 +17,36 @@
             </li>
             <li class="price__item text">fry and glaze donuts</li>
             <li class="price__img">
-              <img
-                class="price__images"
-                src="./images/price-donuts.png"
-                alt="donuts"
-                width="200"
-                height="145"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/price/desktop_price.png    1x,
+                    ./images/price/desktop_price@2x.png 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/price/tablet_price.png    1x,
+                    ./images/price/tablet_price@2x.png 2x
+                  "
+                  media="(min-width:768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/price/mob_price.png    1x,
+                    ./images/price/mob_price@2x.png 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="price__images"
+                  src="./images/price/mob_price.png"
+                  alt="donuts"
+                />
+              </picture>
             </li>
           </ul>
           <ul class="list">
@@ -55,11 +78,36 @@
               donut decoration. painting and various techniques
             </li>
             <li class="price__img-2">
-              <img
-                class="price__images"
-                src="./images/price-donuts.png"
-                alt="donuts"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/price/desktop_price.png    1x,
+                    ./images/price/desktop_price@2x.png 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/price/tablet_price.png    1x,
+                    ./images/price/tablet_price@2x.png 2x
+                  "
+                  media="(min-width:768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/price/mob_price.png    1x,
+                    ./images/price/mob_price@2x.png 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="price__images"
+                  src="./images/price/mob_price.png"
+                  alt="donuts"
+                />
+              </picture>
             </li>
           </ul>
           <ul class="list">
@@ -97,16 +145,44 @@
               2 private lessons with one of the speakers
             </li>
             <li class="price__img-3">
-              <img
-                class="price__images"
-                src="./images/price-donuts.png"
-                alt="donuts"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/price/desktop_price.png    1x,
+                    ./images/price/desktop_price@2x.png 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/price/tablet_price.png    1x,
+                    ./images/price/tablet_price@2x.png 2x
+                  "
+                  media="(min-width:768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/price/mob_price.png    1x,
+                    ./images/price/mob_price@2x.png 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="price__images"
+                  src="./images/price/mob_price.png"
+                  alt="donuts"
+                />
+              </picture>
             </li>
           </ul>
           <ul class="list">
             <li>
-              <a data-modal-open class="button list" href="#registration"
+              <a
+                data-modal-open
+                class="button list price__button"
+                href="#registration"
                 >Register</a
               >
             </li>
