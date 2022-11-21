@@ -51,16 +51,27 @@
 
 	&__list {
 		display: flex;
+		justify-content: center;
 		margin-top: 8px;
 	}
 
+	&__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
 	&__name {
+		margin: 0;
 		margin-top: 8px;
-		margin-bottom: 30px;
 
 		font-weight: 600;
 		font-size: 18px;
 		line-height: 1.22;
+	}
+
+	&__position {
+		margin-bottom: 30px;
 	}
 
 	&__reviews {
